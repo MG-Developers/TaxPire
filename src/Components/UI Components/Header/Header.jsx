@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [subMenu, setSubMenu] = useState(-1);
@@ -17,7 +18,9 @@ const Header = () => {
 
   return (
     <header className="container text-black w-4/5 mx-auto py-2 flex items-center justify-between">
-      <img className="w-44" src="images/taxpire-logo.svg" />
+      <NavLink to="/">
+        <img className="w-44" src="images/taxpire-logo.svg" />
+      </NavLink>
       <nav>
         <ul className="flex items-center justify-center text-base font-medium">
           <li className="relative group px-3 py-2 cursor-pointer hover:text-tp-sky-blue">
@@ -38,13 +41,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/tax-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="/pricing">
                           {" "}
                           ITR
                           <p className="text-gray-600 font-normal text-sm">
                             File ITR with expert assistance
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
 
                       <li className="flex items-center mt-4 p-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-bold hover:text-indigo-600">
@@ -425,13 +428,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/blogs-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="/blogs">
                           {" "}
                           Blogs
                           <p className="text-gray-600 font-normal text-sm">
                             Read latest news, customer success stories
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
 
                       <li className="flex items-center p-2 mt-4 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-bold hover:text-indigo-600">

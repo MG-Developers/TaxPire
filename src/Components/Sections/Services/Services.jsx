@@ -5,7 +5,7 @@ function Services() {
   const services_array = [
     {
       title: "Tax",
-      description: "ITR filing software for Tax Experts",
+      description: "ITR filing for individuals & businesses",
       icon: "c-tax-icon.svg",
     },
 
@@ -17,7 +17,8 @@ function Services() {
 
     {
       title: "GST",
-      description: "GST, E-Invoicing, Max-ITC, E-Way bill & more",
+      description:
+        "Monthly and quarterly GST filing services",
       icon: "c-gst-icon.svg",
     },
 
@@ -32,11 +33,11 @@ function Services() {
     <section className="bg-tp-light-gray py-24 h-screen">
       <div className="mx-auto w-4/5">
         <div>
-          <p className="text-center text-tp-navy-blue text-5xl font-bold">
-            India’s largest tax and financial services platform
+          <p className="text-center text-tp-navy-blue text-4xl font-bold">
+            India’s largest tax filing & business setup platform
           </p>
           <p className="mt-8 text-2xl text-tp-gray text-center font-semibold">
-            Explore our wide range of tax and business solutions
+            Discover our comprehensive tax and business solutions
           </p>
         </div>
 
