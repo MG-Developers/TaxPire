@@ -9,7 +9,15 @@ function Pricing() {
       <Hero />
       <section className="bg-white py-24 text-tp-black">
         <div className="mx-auto w-4/5">
-          <Tabs aria-label="Options" fullWidth>
+          <Tabs
+            aria-label="Options"
+            fullWidth
+            classNames={{
+              tabList: "bg-white border-gray-300 rounded-2xl border-2 p-2",
+              cursor: "bg-tp-sky-blue rounded-2xl",
+              tabContent: "group-data-[selected=true]:text-white font-medium",
+            }}
+          >
             <Tab key="Salaried" title="Salaried">
               <div className="grid grid-cols-3 gap-10 mt-6">
                 <PricingCard />
