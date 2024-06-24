@@ -381,13 +381,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/carrer-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="https://recruit.finpire.in">
                           {" "}
                           Carrers
                           <p className="text-gray-600 font-normal text-sm">
                             We’re hiring! Come join our growing team
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
 
                       <li className="flex items-center p-2 mt-4 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-bold hover:text-indigo-600">
@@ -442,13 +442,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/support-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="/support">
                           {" "}
                           Support
                           <p className="text-gray-600 font-normal text-sm">
                             Raise a query
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
 
                       <li className="flex items-center p-2 mt-4 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-bold hover:text-indigo-600">
@@ -456,13 +456,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/knowledge-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="https://support.taxpire.in/portal/en/kb">
                           {" "}
                           Knowledge Center
                           <p className="text-gray-600 font-normal text-sm">
                             Enhance your knowledge with us
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
@@ -475,12 +475,12 @@ const Header = () => {
       <nav>
         <ul className="flex items-center">
           <li>
-            <a
-              href="#"
+            <NavLink
+              to="https://subscriptions.finpire.in/portal/finpire/login"
               className="rounded-full px-3 py-2 font-medium bg-white bg-opacity-10 flex items-center group"
             >
               Sign in
-            </a>
+            </NavLink>
           </li>
 
           <li>

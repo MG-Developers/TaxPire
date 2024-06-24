@@ -33,7 +33,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className=" flex mt-8">
+            <div className="flex mt-8">
               <button className="flex items-center shadow-xl bg-tp-sky-blue text-base text-white px-8 py-4 font-medium rounded-full mr-8 transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
                 Get Started <MdKeyboardArrowRight size={"1.5rem"} />
               </button>

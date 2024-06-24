@@ -32,26 +32,11 @@ function Footer() {
                 <div className="flex items-center mt-2 tex-sm text-tp-black">
                   <IoMdMail size="1rem" className="mr-2" />
                   <span className="lowercase underline-offset-4 transition-all hover:underline hover:ease-in-out hover:duration-500">
-                    INFO@TAXPIRE.COM
+                    TAXPIRE@FINPIRE.IN
                   </span>
                 </div>
               </a>
             </div>
-
-            {/* <div className="mt-6">
-              <a
-                className="text-gb-gray-3 lg:text-base text-sm font-medium"
-                target="_blank"
-                href="tel:+971 9098764890:"
-              >
-                <div className="flex items-center">
-                  <FaPhoneAlt size="1.2rem" className="mr-2" />
-                  <span className="text-gb-yellow decoration-gb-yellow underline-offset-4 hover:underline hover:ease-in-out hover:duration-500">
-                    +971 9098764890
-                  </span>
-                </div>
-              </a>
-            </div> */}
           </div>
 
           <div className="mt-10">
@@ -74,6 +59,10 @@ function Footer() {
             <ul className="list-none text-tp-gray">
               <li className="mb-2 text-base transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer">
                 <Link to="/contact">Contact Us</Link>
+              </li>
+
+              <li className="mb-2 text-base transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer">
+                <Link to="/support">Raise a ticket</Link>
               </li>
             </ul>
           </div>
