@@ -7,8 +7,8 @@ function TeamCard(props) {
   return (
     <div className="relative flex items-center justify-center rounded-3xl border-1 min-h-96 transition-all hover:bg-tp-sky-blue hover:duration-1000 hover:ease-in-out">
       <div className="absolute rounded-3xl shadow-lg top-6 bg-white">
-        <div>
-          <img className="w-80 rounded-t-3xl" src={`images/${props.img}`} />
+        <div className="w-80 h-80">
+          <img className="rounded-t-3xl object-fit" src={`images/${props.img}`} />
         </div>
 
         <div className="p-6 pb-2">
@@ -17,49 +17,23 @@ function TeamCard(props) {
 
           <div className="mt-4">
             <ul className="flex list-none text-gb-gray-3 mb-4">
-              {props.facebook && (
-                <li className="mr-4">
-                  <Link
-                    to="https://www.facebook.com/share/6CoN9xqMXzJUhySN/?mibextid=LQQJ4d"
-                    className="p-2 inline-block shadow-tp-black border-1 border-tp-black text-tp-black rounded-full transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer"
-                  >
-                    <FaFacebookF />
-                  </Link>
-                </li>
-              )}
+              <li className="mr-4">
+                <Link
+                  to={props.linkedIn}
+                  className="p-2 inline-block shadow-tp-black border-1 border-tp-black text-tp-black rounded-full transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer"
+                >
+                  <FaLinkedinIn />
+                </Link>
+              </li>
 
-              {props.instagram && (
-                <li className="mr-4">
-                  <Link
-                    to="https://www.instagram.com/globalbizhq"
-                    className="p-2 inline-block border-1 border-tp-black text-tp-black rounded-full transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer"
-                  >
-                    <FaInstagram />
-                  </Link>
-                </li>
-              )}
-
-              {props.twitter && (
-                <li className="mr-4">
-                  <Link
-                    to="https://x.com/globalbizhq"
-                    className="p-2 inline-block shadow-tp-black border-1 border-tp-black text-tp-black rounded-full transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer"
-                  >
-                    <FaXTwitter />
-                  </Link>
-                </li>
-              )}
-
-              {props.linkedIn && (
-                <li className="mr-4">
-                  <Link
-                    to="https://www.linkedin.com/company/globalbizhq"
-                    className="p-2 inline-block shadow-tp-black border-1 border-tp-black text-tp-black rounded-full transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer"
-                  >
-                    <FaLinkedinIn />
-                  </Link>
-                </li>
-              )}
+              <li className="mr-4">
+                <Link
+                  to={props.twitter}
+                  className="p-2 inline-block shadow-tp-black border-1 border-tp-black text-tp-black rounded-full transition-all hover:ease-in-out hover:duration-500 hover:scale-105 cursor-pointer"
+                >
+                  <FaXTwitter />
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
