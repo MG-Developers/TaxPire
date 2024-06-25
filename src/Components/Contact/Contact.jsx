@@ -1,6 +1,4 @@
-import React, { useMemo, useState } from "react";
-import { Input, Textarea } from "@nextui-org/react";
-import { Select, SelectItem, Avatar } from "@nextui-org/react";
+import React from "react";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -59,7 +57,7 @@ function Contact() {
                 <li className="mr-4">
                   <Link
                     to="https://www.facebook.com/share/6CoN9xqMXzJUhySN/?mibextid=LQQJ4d"
-                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-white cursor-pointer "
+                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-tp-sky-blue cursor-pointer "
                   >
                     <FaFacebookF />
                   </Link>
@@ -68,7 +66,7 @@ function Contact() {
                 <li className="mr-4">
                   <Link
                     to="https://www.instagram.com/globalbizhq"
-                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-white cursor-pointer "
+                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-tp-sky-blue cursor-pointer "
                   >
                     <FaInstagram />
                   </Link>
@@ -77,7 +75,7 @@ function Contact() {
                 <li className="mr-4">
                   <Link
                     to="https://x.com/globalbizhq"
-                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-white cursor-pointer "
+                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-tp-sky-blue cursor-pointer "
                   >
                     <FaXTwitter />
                   </Link>
@@ -86,7 +84,7 @@ function Contact() {
                 <li className="mr-4">
                   <Link
                     to="https://www.linkedin.com/company/globalbizhq"
-                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-white cursor-pointer "
+                    className="p-2 inline-block border-1 border-tp-sky-blue shadow shadow-tp-sky-blue rounded-full hover:ease-in-out hover:duration-500 hover:text-tp-sky-blue cursor-pointer "
                   >
                     <FaLinkedinIn />
                   </Link>

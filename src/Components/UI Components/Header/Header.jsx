@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container text-black w-4/5 mx-auto py-2 flex items-center justify-between">
+    <header className="container text-black w-4/5 mx-auto py-4 flex items-center justify-between">
       <NavLink to="/">
         <img className="w-44" src="images/taxpire-logo.svg" />
       </NavLink>
@@ -367,13 +367,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/about-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="/about">
                           {" "}
                           About Us
                           <p className="text-gray-600 font-normal text-sm">
                             Learn how we’re different and meet our team
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
 
                       <li className="flex items-center p-2 mt-4 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-bold hover:text-indigo-600">

@@ -20,13 +20,7 @@ const MarqueeItem = ({ data, from, to }) => {
         <ClientCard />
         <ClientCard />
         <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
+        
         {/* {images.map((image, index) => {
           return <img className="h-40 w-56 pr-20" src={image} key={index} />;
         })} */}
@@ -36,14 +30,8 @@ const MarqueeItem = ({ data, from, to }) => {
         initial={{ x: `${from}` }}
         animate={{ x: `${to}` }}
         transition={{ duration: 150, repeat: Infinity, ease: "linear" }}
-        className="flex flex-shrink-0"
+        className="flex flex-shrink-0 gap-10"
       >
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
-        <ClientCard />
         <ClientCard />
         <ClientCard />
         <ClientCard />
