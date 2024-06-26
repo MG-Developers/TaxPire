@@ -352,7 +352,7 @@ function About() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-40 mt-16">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-20 mt-16">
             {team_array.map((item) => {
               return (
                 <TeamCard
