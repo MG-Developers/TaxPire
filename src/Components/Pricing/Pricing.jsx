@@ -3,6 +3,12 @@ import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import Hero from "../UI Components/Hero/Hero";
 import PricingCard from "../UI Components/Cards/PricingCard/PricingCard";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css";
+import "./index.css";
+
 function Pricing() {
   const itr_salaried_pricing_details = [
     {
@@ -427,11 +433,21 @@ function Pricing() {
             }}
           >
             <Tab key="Salaried" title="Salaried">
-              <div className="grid grid-cols-3 gap-10 mt-6">
+              <Swiper
+                slidesPerView={3.25}
+                spaceBetween={40}
+                navigation={true}
+                modules={[Navigation]}
+                className="mySwiper"
+              >
                 {itr_salaried_pricing_details.map((item, index) => {
-                  return <PricingCard key={index} details={item} />;
+                  return (
+                    <SwiperSlide>
+                      <PricingCard key={index} details={item} />
+                    </SwiperSlide>
+                  );
                 })}
-              </div>
+              </Swiper>
             </Tab>
 
             <Tab

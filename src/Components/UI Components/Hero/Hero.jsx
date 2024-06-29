@@ -4,12 +4,12 @@ import { SiTrustpilot } from "react-icons/si";
 
 function Hero() {
   return (
-    <section className="bg-white py-16 text-tp-navy-blue">
-      <div className="mx-auto w-4/5">
-        <div className="grid grid-cols-2 gap-x-10 items-center">
-          <div>
-            <div className="flex items-center border-1 px-6 py-2 border-tp-gray rounded-full max-w-fit">
-              <p className="flex items-center mr-2 text-base font-semibold">
+    <section className="bg-white lg:py-16 md:py-12 py-8 text-tp-navy-blue">
+      <div className="mx-auto lg:w-4/5 w-11/12">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">
+          <div className="flex flex-col lg:items-start items-center">
+            <div className="flex md:flex-row flex-col items-center border-1 px-6 py-2 border-tp-gray rounded-full max-w-fit">
+              <p className="flex items-center mr-2 xl:text-base text-sm font-semibold">
                 5 Star Reviews On{" "}
                 <SiTrustpilot
                   size={"1.5rem"}
@@ -20,24 +20,26 @@ function Hero() {
                   Trustpilot
                 </span>
               </p>
-              <img className="mr-1" src="images/star.svg" />
-              <img className="mr-1" src="images/star.svg" />
-              <img className="mr-1" src="images/star.svg" />
-              <img className="mr-1" src="images/star.svg" />
-              <img className="mr-1" src="images/star.svg" />
+              <div className="flex md:mt-0 mt-2">
+                <img className="mr-1 2xl:w-6 w-4" src="images/star.svg" />
+                <img className="mr-1 2xl:w-6 w-4" src="images/star.svg" />
+                <img className="mr-1 2xl:w-6 w-4" src="images/star.svg" />
+                <img className="mr-1 2xl:w-6 w-4" src="images/star.svg" />
+                <img className="mr-1 2xl:w-6 w-4" src="images/star.svg" />
+              </div>
             </div>
 
             <div className="max-w-lg mt-10">
-              <p className="text-5xl font-semibold leading-snug">
+              <p className="2xl:text-5xl md:text-4xl text-2xl lg:text-left text-center font-semibold leading-snug">
                 Tax filing made easy with our Taxperts.
               </p>
             </div>
 
-            <div className="flex mt-8">
-              <button className="flex items-center shadow-xl bg-tp-sky-blue text-base text-white px-8 py-4 font-medium rounded-full mr-8 transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
+            <div className="flex md:flex-row flex-col gap-4 mt-8">
+              <button className="flex items-center shadow-xl bg-tp-sky-blue md:text-base text-sm text-white 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 font-medium rounded-full transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
                 Get Started <MdKeyboardArrowRight size={"1.5rem"} />
               </button>
-              <button className="text-tp-navy-blue shadow-xl text-base px-8 py-4 border-1 rounded-full border-tp-black font-medium transition-all hover:bg-tp-blue hover:text-white hover:border-tp-sky-blue hover:ease-in-out hover:duration-500">
+              <button className="text-tp-navy-blue shadow-xl md:text-base text-sm 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 border-1 rounded-full border-tp-black font-medium transition-all hover:bg-tp-blue hover:text-white hover:border-tp-sky-blue hover:ease-in-out hover:duration-500">
                 Talk to our CAs
               </button>
             </div>

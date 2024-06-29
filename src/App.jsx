@@ -6,6 +6,9 @@ import Home from "./Components/Home/Home";
 import Blogs from "./Components/Blogs/Blogs";
 import About from "./Components/About/About";
 import Pricing from "./Components/Pricing/Pricing";
+import GSTPricing from "./Components/GST Pricing/GSTPricing";
+import TDSPricing from "./Components/TDS Pricing/TDSPricing";
+import BusinessPricing from "./Components/Business Pricing/BusinessPricing";
 import Support from "./Components/Support/Support";
 import Contact from "./Components/Contact/Contact";
 
@@ -22,10 +25,13 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/gstpricing/*" element={<GSTPricing />} />
+          <Route path="/tdspricing/*" element={<TDSPricing />} />
+          <Route path="/businesspricing/*" element={<BusinessPricing />} />
           <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin/plancategory" element={<PlanCategory />} />

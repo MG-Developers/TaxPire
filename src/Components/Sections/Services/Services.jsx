@@ -17,8 +17,7 @@ function Services() {
 
     {
       title: "GST",
-      description:
-        "Monthly and quarterly GST filing services",
+      description: "Monthly and quarterly GST filing services",
       icon: "c-gst-icon.svg",
     },
 
@@ -30,27 +29,26 @@ function Services() {
   ];
 
   return (
-    <section className="bg-tp-light-gray py-24 h-screen">
-      <div className="mx-auto w-4/5">
+    <section className="bg-tp-light-gray lg:py-24 md:py-16 py-10 min-h-screen">
+      <div className="mx-auto lg:w-4/5 w-11/12">
         <div>
-          <p className="text-center text-tp-navy-blue text-4xl font-bold">
+          <p className="text-center text-tp-navy-blue xl:text-4xl md:text-3xl text-xl font-bold">
             India’s largest tax filing & business setup platform
           </p>
-          <p className="mt-8 text-2xl text-tp-gray text-center font-semibold">
+          <p className="lg:mt-8 mt-6 xl:text-2xl lg:text-xl md:text-lg text-sm text-tp-gray text-center font-semibold">
             Discover our comprehensive tax and business solutions
           </p>
         </div>
 
-        <div className="grid grid-cols-4 mt-20">
+        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 2xl:mt-20 lg:mt-16 md:mt-12 mt-8">
           {services_array.map((item, index) => {
             return (
-              <div key={index} className="p-4">
-                <ServiceCard
-                  title={item.title}
-                  description={item.description}
-                  icon={item.icon}
-                />
-              </div>
+              <ServiceCard
+                key={index}
+                title={item.title}
+                description={item.description}
+                icon={item.icon}
+              />
             );
           })}
         </div>

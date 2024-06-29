@@ -55,13 +55,13 @@ const Header = () => {
                           className="w-10 mr-4 object-cover"
                           src="images/icons/gst-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="/gstpricing/gstregistration">
                           {" "}
                           GST
                           <p className="text-gray-600 font-normal text-sm">
                             Error free GST filing
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
 
                       <li className="flex items-center mt-4 p-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-bold hover:text-indigo-600">
@@ -69,13 +69,13 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/tds-icon.svg"
                         />
-                        <a href="#">
+                        <NavLink to="/tdspricing/tds-on-salary-payments">
                           {" "}
                           TDS
                           <p className="text-gray-600 font-normal text-sm">
                             e-TDS filing for businesses
                           </p>
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
@@ -113,12 +113,12 @@ const Header = () => {
                             className="w-10 mr-4"
                             src="images/icons/business-icon.svg"
                           />
-                          <a href="#">
+                          <NavLink to="businesspricing/private-limited-company">
                             Business Registration
                             <p className="text-gray-600 font-normal text-sm">
                               Register your dream startup
                             </p>
-                          </a>
+                          </NavLink>
                         </li>
 
                         <li
@@ -183,33 +183,33 @@ const Header = () => {
                             </p>
                             <ul className="text-base mt-2">
                               <li>
-                                <a
-                                  href="#"
+                                <NavLink
+                                  to="businesspricing/private-limited-company"
                                   className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
                                 >
                                   {" "}
                                   Private Limited Company
-                                </a>
+                                </NavLink>
                               </li>
 
                               <li>
-                                <a
-                                  href="#"
+                                <NavLink
+                                  to="businesspricing/public-limited-company"
                                   className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
                                 >
                                   {" "}
                                   Public Limited Company
-                                </a>
+                                </NavLink>
                               </li>
 
                               <li>
-                                <a
-                                  href="#"
+                                <NavLink
+                                  to="businesspricing/limited-liability-partnership-(llp)"
                                   className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
                                 >
                                   {" "}
                                   Limited Liability Partnership
-                                </a>
+                                </NavLink>
                               </li>
 
                               <li>
@@ -223,13 +223,13 @@ const Header = () => {
                               </li>
 
                               <li>
-                                <a
-                                  href="#"
+                                <NavLink
+                                  to="businesspricing/proprietorship"
                                   className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
                                 >
                                   {" "}
                                   Sole Proprietorship
-                                </a>
+                                </NavLink>
                               </li>
 
                               <li>

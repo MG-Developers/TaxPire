@@ -98,22 +98,22 @@ function Home() {
     <>
       <Hero />
 
-      <section className="bg-white py-24 text-tp-black">
-        <div className="mx-auto w-4/5">
-          <div className="flex items-center border-1 px-8 py-4 border-tp-gray rounded-full max-w-fit">
+      <section className="bg-white lg:py-24 md:py-16 py-10 text-tp-black">
+        <div className="mx-auto lg:w-4/5 w-11/12">
+          <div className="flex items-center border-1 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 border-tp-gray rounded-full max-w-fit">
             <p className="text-base font-semibold">It’s Easier As Ever!</p>
           </div>
 
-          <div className="mt-10">
-            <div className="flex justify-between items-end">
+          <div className="md:mt-10 mt-6">
+            <div className="flex md:flex-row flex-col justify-between items-end">
               <div>
-                <p className="font-bold text-4xl text-tp-navy-blue max-w-lg leading-tight">
-                  Effortless ITR Filing in less than 5 miutes.
+                <p className="font-bold 2xl:text-4xl md:text-3xl text-2xl text-tp-navy-blue max-w-lg leading-tight">
+                  Effortless ITR Filing in less than 5 minutes.
                 </p>
               </div>
 
               <div>
-                <button className="text-tp-gray shadow-sm shadow-tp-sky-blue text-base px-8 py-4 border-2 border-tp-sky-blue rounded-full font-medium transition-all hover:shadow-sm hover:shadow-tp-blue hover:bg-tp-blue hover:text-white hover:border-tp-blue hover:ease-in-out hover:duration-500">
+                <button className="md:mt-0 mt-4 text-tp-gray shadow-sm shadow-tp-sky-blue text-base 2xl:px-8 lg:px-6 px-4 2xl:py-4 lg:py-3 py-2 border-2 border-tp-sky-blue rounded-full font-medium transition-all hover:shadow-sm hover:shadow-tp-blue hover:bg-tp-blue hover:text-white hover:border-tp-blue hover:ease-in-out hover:duration-500">
                   See All
                 </button>
               </div>
@@ -121,29 +121,29 @@ function Home() {
           </div>
 
           <div className="mt-10">
-            <div className="grid grid-cols-3 gap-x-10">
-              <div>
-                <div className="border-1 border-light-gray shadow shadow-gray-300 rounded-3xl p-8">
+            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+              <div className="order-1">
+                <div className="border-1 border-light-gray shadow shadow-gray-300 rounded-3xl 2xl:p-10 lg:p-6 p-4">
                   <img src="images/dummy-img-3.jpg" />
-                  <p className="text-2xl text-tp-black font-semibold mt-6">
+                  <p className="2xl:text-2xl text-xl text-tp-black font-semibold mt-6">
                     Validation of all your income by experts
                   </p>
-                  <p className="text-lg text-tp-gray font-normal mt-2">
+                  <p className="2xl:text-lg text-base text-tp-gray font-normal mt-2">
                     With effective filtering, seamless sharing options, you can
                     easily simplify and manage your money.
                   </p>
                 </div>
 
-                <div className="bg-tp-yellow border-1 border-tp-yellow shadow shadow-tp-yellow rounded-3xl p-10 mt-8">
-                  <p className="text-2xl text-tp-black font-semibold mt-6">
+                <div className="bg-tp-yellow border-1 border-tp-yellow shadow shadow-tp-yellow rounded-3xl 2xl:p-10 lg:p-6 p-4 mt-8">
+                  <p className="2xl:text-2xl text-xl text-tp-black font-semibold 2xl:mt-6 mt-2">
                     Crypto and F&O gains covered
                   </p>
-                  <p className="text-lg text-tp-black font-normal mt-2">
+                  <p className="2xl:text-lg text-base text-tp-black font-normal mt-2">
                     Instantly access and manage your personal finances with a
                     simple tap.
                   </p>
 
-                  <div className="bg-white grid grid-cols-2 gap-2 p-6 rounded-3xl mt-4">
+                  <div className="text-base bg-white grid grid-cols-2 gap-2 2xl:p-6 lg:p-4 p-3 rounded-3xl mt-4">
                     <p className="flex items-center">
                       {" "}
                       <MdKeyboardArrowRight className="rounded-full bg-tp-sky-blue text-white mr-2" />{" "}
@@ -168,19 +168,19 @@ function Home() {
                 </div>
               </div>
 
-              <div>
-                <div className="bg-tp-yellow border-1 border-tp-yellow shadow shadow-tp-yellow rounded-3xl p-10">
-                  <p className="text-2xl text-tp-black font-semibold mt-6">
+              <div className="xl:order-2 lg:order-3 order-2">
+                <div className="bg-tp-yellow border-1 border-tp-yellow shadow shadow-tp-yellow rounded-3xl 2xl:p-10 lg:p-6 p-4">
+                  <p className="2xl:text-2xl text-xl text-tp-black font-semibold 2xl:mt-6 mt-2">
                     No hidden charges
                   </p>
-                  <p className="text-lg text-tp-black font-normal mt-2">
+                  <p className="2xl:text-lg text-base text-tp-black font-normal mt-2">
                     Instantly access and manage your personal finances with a
                     simple tap.
                   </p>
                 </div>
 
-                <div className="border-1 border-light-gray shadow shadow-gray-300 rounded-3xl p-8 mt-8">
-                  <p className="text-2xl text-tp-black font-semibold">
+                <div className="border-1 border-light-gray shadow shadow-gray-300 rounded-3xl 2xl:p-10 lg:p-6 p-4 mt-8">
+                  <p className="2xl:text-2xl text-xl text-tp-black font-semibold">
                     Avoid tax notice or penalty
                   </p>
 
@@ -194,12 +194,12 @@ function Home() {
                 </div>
               </div>
 
-              <div>
-                <div className="border-1 border-light-gray shadow shadow-gray-300 rounded-3xl p-8">
-                  <p className="text-2xl text-tp-black font-semibold">
+              <div className="xl:order-3 lg:order-2 order-3">
+                <div className="border-1 border-light-gray shadow shadow-gray-300 rounded-3xl 2xl:p-10 lg:p-6 p-4">
+                  <p className="2xl:text-2xl text-xl text-tp-black font-semibold">
                     Maximum tax refund
                   </p>
-                  <p className="text-lg text-tp-gray font-normal mt-2">
+                  <p className="2xl:text-lg text-base text-tp-gray font-normal mt-2">
                     Using your smartphone, you can easily monitor & manage at
                     any time and from any location.
                   </p>
@@ -208,7 +208,7 @@ function Home() {
                 </div>
 
                 <div className="mt-10">
-                  <button className="text-tp-gray w-full text-center shadow-sm shadow-tp-sky-blue text-base px-8 py-4 border-2 border-tp-sky-blue rounded-full font-medium transition-all hover:shadow-sm hover:shadow-tp-blue hover:bg-tp-blue hover:text-white hover:border-tp-blue hover:ease-in-out hover:duration-500">
+                  <button className="text-tp-gray w-full text-center shadow-sm shadow-tp-sky-blue text-base 2xl:px-8 px-6 2xl:py-4 py-3 border-2 border-tp-sky-blue rounded-full font-medium transition-all hover:shadow-sm hover:shadow-tp-blue hover:bg-tp-blue hover:text-white hover:border-tp-blue hover:ease-in-out hover:duration-500">
                     Book Session
                   </button>
                 </div>
@@ -220,34 +220,36 @@ function Home() {
 
       <Services />
 
-      <section className="bg-white py-24 text-tp-black">
-        <div className="mx-auto w-4/5">
+      <section className="bg-white lg:py-24 md:py-16 py-10 text-tp-black">
+        <div className="mx-auto lg:w-4/5 w-11/12">
           <div>
-            <p className="text-center text-4xl font-bold">
+            <p className="text-center lg:text-4xl md:text-3xl text-2xl font-bold xl:mb-20 lg:mb-16 md:mb-12 mb-8">
               Unified solution for visionary entrepreneurs
             </p>
-            <p className="mt-8 text-2xl text-tp-gray text-center font-semibold"></p>
           </div>
 
-          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-20 md:gap-y-0 gap-x-0 gap-y-8 lg:mt-14 md:mt-12 mt-8">
-            <div className="relative">
-              <img src="images/dummy-img.jpg" className="rounded-2xl" />
+          <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-8 lg:mt-24 md:mt-16 mt-8">
+            <div className="relative lg:block flex justify-center">
+              <img
+                src="images/dummy-img.jpg"
+                className="rounded-2xl xl:w-4/5 w-full"
+              />
             </div>
 
-            <div className="flex flex-col justify-center lg:gap-y-4 gap-y-2">
+            <div className="flex flex-col md:items-start items-center md:text-left text-center justify-center lg:gap-y-4 gap-y-2">
               <div>
-                <p className="lg:text-3xl text-2xl font-semibold">
+                <p className="md:text-3xl text-2xl font-semibold">
                   Setup your dream business
                 </p>
-                <p className="md:text-base text-base lg:mt-4 mt-2 leading-relaxed font-normal">
+                <p className="text-base md:mt-4 mt-2 leading-relaxed font-normal">
                   We provide comprehensive support from the inception of your
                   company to its expansion, guaranteeing 100% compliance
                   throughout your business journey.
                 </p>
               </div>
 
-              <div className="mt-4 text-base max-w-lg">
-                <div className="flex flex-wrap gap-3">
+              <div className="mt-4 text-base lg:max-w-lg">
+                <div className="flex md:justify-start justify-center flex-wrap gap-3">
                   <span className="flex items-center bg-tp-lg rounded-lg px-3 py-2">
                     <TbNotes className="mr-2" size={"1.25rem"} />
                     Incorporation
@@ -286,7 +288,7 @@ function Home() {
                 </div>
               </div>
 
-              <div className="mt-6">
+              <div className="md:mt-6 mt-4">
                 <button className="flex items-center bg-tp-sky-blue text-base text-white px-6 py-3 font-medium rounded-full mr-8 transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
                   <span className="mr-2">Get Started</span>
                   <MdKeyboardArrowRight size={"1.25rem"} />
@@ -295,21 +297,21 @@ function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-20 md:gap-y-0 gap-x-0 gap-y-8 lg:mt-14 md:mt-12 mt-8">
-            <div className="flex flex-col justify-center lg:gap-y-4 gap-y-2">
+          <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-8 lg:mt-24 md:mt-16 mt-8">
+            <div className="flex flex-col md:items-start items-center md:text-left text-center justify-center lg:gap-y-4 gap-y-2 lg:order-1 order-2">
               <div>
-                <p className="lg:text-3xl text-2xl font-semibold">
+                <p className="md:text-3xl text-2xl font-semibold">
                   Stay Compliant
                 </p>
-                <p className="md:text-base text-base lg:mt-4 mt-2 leading-relaxed font-normal">
+                <p className="text-base md:mt-4 mt-2 leading-relaxed font-normal">
                   Our premium compliance services facilitate smooth business
                   operations, encompassing online bookkeeping, tax support, GST
                   services, TDS management & more.
                 </p>
               </div>
 
-              <div className="mt-4 text-base max-w-lg">
-                <div className="flex flex-wrap gap-3">
+              <div className="mt-4 text-base lg:max-w-lg">
+                <div className="flex md:justify-start justify-center flex-wrap gap-3">
                   <span className="flex items-center bg-tp-lg rounded-lg px-3 py-2">
                     <IoWalletOutline size={"1.25rem"} className="mr-2" />
                     GST
@@ -337,7 +339,7 @@ function Home() {
                 </div>
               </div>
 
-              <div className="mt-6">
+              <div className="md:mt-6 mt-4">
                 <button className="flex items-center bg-tp-sky-blue text-base text-white px-6 py-3 font-medium rounded-full mr-8 transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
                   <span className="mr-2">Get Started</span>
                   <MdKeyboardArrowRight size={"1.25rem"} />
@@ -345,46 +347,46 @@ function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative flex lg:justify-end justify-center lg:order-2 order-1">
               <img
                 src="images/dummy-img-2.jpg"
-                className="rounded-2xl w-full"
+                className="rounded-2xl xl:w-4/5 w-full"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-tp-light-gray py-24">
-        <div className="flex flex-col items-center mx-auto w-4/5">
+      <section className="bg-tp-light-gray lg:py-24 md:py-16 py-10">
+        <div className="flex flex-col items-center mx-auto lg:w-4/5 w-11/12">
           <div>
-            <p className="text-base font-semibold text-tp-back border-1 px-8 py-4 border-tp-black rounded-full">
+            <p className="text-base font-semibold text-tp-back border-1 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 border-tp-black rounded-full">
               Why Taxpire ?
             </p>
           </div>
 
-          <div className="mt-8">
-            <p className="leading-tight text-4xl text-tp-navy-blue text-center font-bold max-w-lg">
+          <div className="md:mt-8 mt-6">
+            <p className="leading-tight capitalize lg:text-4xl md:text-3xl text-2xl text-tp-navy-blue text-center font-bold max-w-lg">
               Everything in Compliance Just Becomes so Easy
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 mt-10">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mt-10">
             {benefits_array.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="flex items-center p-6 rounded-3xl bg-white shadow-lg shadow-gray-100 hover:duration-500 hover:shadow-gray-300 hover:ease-in-out transition-all"
+                  className="grid md:grid-flow-col grid-flow-row md:auto-cols-fit auto-rows-fit gap-6 p-4 rounded-3xl bg-white shadow-lg shadow-gray-100 hover:duration-500 hover:shadow-gray-300 hover:ease-in-out transition-all"
                 >
-                  <div className="flex items-center justify-center bg-tp-light-gray rounded-3xl min-w-36 min-h-36 mr-6">
-                    <img className="w-24" src={`images/icons/${item.icon}`} />
+                  <div className="flex items-center justify-center bg-tp-light-gray rounded-3xl p-4 min-h-fit min-w-fit">
+                    <img className="xl:w-24 w-20" src={`images/icons/${item.icon}`} />
                   </div>
 
                   <div>
-                    <p className="text-tp-sky-blue text-2xl font-normal">
+                    <p className="text-tp-sky-blue md:text-2xl text-xl font-normal">
                       {item.title}
                     </p>
-                    <p className="mt-2 font-light text-lg text-tp-gray">
+                    <p className="mt-2 font-light md:text-lg text-base text-tp-gray">
                       {item.description}
                     </p>
                   </div>

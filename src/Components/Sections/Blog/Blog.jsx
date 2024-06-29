@@ -82,7 +82,7 @@ function Blogs() {
             {blogs_arr.slice(0, 3).map((item, index) => {
               return (
                 <BlogCard
-                  index={index}
+                  key={index}
                   img={item.img}
                   category={item.category}
                   date={item.date}
