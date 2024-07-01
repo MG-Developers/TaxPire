@@ -208,9 +208,9 @@ function Home() {
                 </div>
 
                 <div className="mt-10">
-                  <button className="text-tp-gray w-full text-center shadow-sm shadow-tp-sky-blue text-base 2xl:px-8 px-6 2xl:py-4 py-3 border-2 border-tp-sky-blue rounded-full font-medium transition-all hover:shadow-sm hover:shadow-tp-blue hover:bg-tp-blue hover:text-white hover:border-tp-blue hover:ease-in-out hover:duration-500">
+                  <a href="https://booknow.finpire.in/#/taxpire" className="block text-tp-gray w-full text-center shadow-sm shadow-tp-sky-blue text-base 2xl:px-8 px-6 2xl:py-4 py-3 border-2 border-tp-sky-blue rounded-full font-medium transition-all hover:shadow-sm hover:shadow-tp-blue hover:bg-tp-blue hover:text-white hover:border-tp-blue hover:ease-in-out hover:duration-500">
                     Book Session
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -397,13 +397,13 @@ function Home() {
         </div>
       </section>
 
-      <Tab />
+      {/* <Tab /> */}
 
       {/* <Marquee /> */}
 
       <FAQs questions={questions} />
 
-      <Blog />
+      {/* <Blog /> */}
     </>
   );
 }

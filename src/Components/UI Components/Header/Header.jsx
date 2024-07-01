@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [subMenu, setSubMenu] = useState(-1);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
   const handleMenu = (menuIndex) => {
     setMenuOpen(true);
@@ -19,10 +26,11 @@ const Header = () => {
   return (
     <header className="container text-black w-4/5 mx-auto py-4 flex items-center justify-between">
       <NavLink to="/">
-        <img className="w-44" src="images/taxpire-logo.svg" />
+        <img className="xl:w-40 md:w-36 w-32" src="images/taxpire-logo.svg" />
       </NavLink>
-      <nav>
-        <ul className="flex items-center justify-center text-base font-medium">
+
+      <nav className="xl:flex hidden">
+        <ul className="flex lg:flex-row flex-col items-center justify-center text-base font-medium">
           <li className="relative group px-3 py-2 cursor-pointer hover:text-tp-sky-blue">
             <button className="flex items-center">
               <p>File Taxes</p>{" "}
@@ -472,8 +480,19 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav>
-        <ul className="flex items-center">
+
+      {mobileMenuOpen && <MobileNav />}
+
+      <div className="xl:hidden flex cursor-pointer">
+        {mobileMenuOpen ? (
+          <RxCross1 onClick={toggleMenu} size="1.5em" />
+        ) : (
+          <RxHamburgerMenu onClick={toggleMenu} size="1.5em" />
+        )}
+      </div>
+
+      <nav className="xl:flex hidden">
+        <ul className="flex items-center gap-4">
           <li>
             <NavLink
               to="https://subscriptions.finpire.in/portal/finpire/login"
@@ -486,7 +505,7 @@ const Header = () => {
           <li>
             <a
               href="#"
-              className="ml-4 bg-tp-sky-blue text-base text-white px-6 py-3 font-medium rounded-full mr-8 transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500"
+              className="bg-tp-sky-blue text-base text-white px-6 py-3 font-medium rounded-full transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500"
             >
               Start your business
             </a>

@@ -1,6 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { SiTrustpilot } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -36,18 +37,21 @@ function Hero() {
             </div>
 
             <div className="flex md:flex-row flex-col gap-4 mt-8">
-              <button className="flex items-center shadow-xl bg-tp-sky-blue md:text-base text-sm text-white 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 font-medium rounded-full transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
+              <Link to="/pricing" className="flex items-center shadow-xl bg-tp-sky-blue md:text-base text-sm text-white 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 font-medium rounded-full transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500">
                 Get Started <MdKeyboardArrowRight size={"1.5rem"} />
-              </button>
-              <button className="text-tp-navy-blue shadow-xl md:text-base text-sm 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 border-1 rounded-full border-tp-black font-medium transition-all hover:bg-tp-blue hover:text-white hover:border-tp-sky-blue hover:ease-in-out hover:duration-500">
+              </Link>
+              <a
+                href="https://booknow.finpire.in/#/taxpire"
+                className="text-tp-navy-blue shadow-xl md:text-base text-sm 2xl:px-8 md:px-6 px-4 2xl:py-4 md:py-3 py-2 border-1 rounded-full border-tp-black font-medium transition-all hover:bg-tp-blue hover:text-white hover:border-tp-sky-blue hover:ease-in-out hover:duration-500"
+              >
                 Talk to our CAs
-              </button>
+              </a>
             </div>
           </div>
 
           <div>
             <video loop autoPlay muted>
-              <source src="videos/home.mp4" type="video/mp4" />
+              <source src="videos/home-video.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
