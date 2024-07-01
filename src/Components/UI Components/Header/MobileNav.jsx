@@ -38,9 +38,9 @@ function MobileNav() {
       initial={{ opacity: 0, x: -500 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75, ease: "easeInOut" }}
-      className="xl:hidden block absolute left-0 top-24 w-full h-screen bg-white text-tp-black z-20"
+      className="xl:hidden block absolute left-0 top-20 w-full h-screen bg-white text-tp-black z-20"
     >
-      <ul className="flex flex-col justify-center md:text-base text-sm py-6 w-4/5 mx-auto">
+      <ul className="flex flex-col justify-center md:text-base py-3 text-sm w-4/5 mx-auto">
         {linksData.map((item, index) => {
           return (
             <li key={index} className="border-b-1 py-3">

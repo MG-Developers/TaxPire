@@ -26,7 +26,7 @@ function Pricing(props) {
     <>
       <Hero />
       <section className="bg-white py-24 text-tp-black">
-        <div className="mx-auto w-4/5">
+        <div className="mx-auto lg:w-4/5 w-11/12">
           <Tabs
             aria-label="Options"
             fullWidth
@@ -44,29 +44,40 @@ function Pricing(props) {
                   key={item.category.toLowerCase().replace(/\s+/g, "-")}
                   title={item.category}
                 >
-                  {item.plans.length > 3 ? (
-                    <Swiper
-                      slidesPerView={3.25}
-                      spaceBetween={40}
-                      navigation={true}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                    >
-                      {item.plans.map((item, index) => {
-                        return (
-                          <SwiperSlide key={index}>
-                            <PricingCard key={index} details={item} />
-                          </SwiperSlide>
-                        );
-                      })}
-                    </Swiper>
-                  ) : (
-                    <div className="grid grid-flow-col auto-cols-max gap-10 mt-6 justify-center">
-                      {item.plans.map((item, index) => {
-                        return <PricingCard key={index} details={item} />;
-                      })}
-                    </div>
-                  )}
+                  <Swiper
+                    slidesPerView={3.25}
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                      },
+                      768: {
+                        slidesPerView: 1.25,
+                        spaceBetween: 30,
+                      },
+                      1024: {
+                        slidesPerView: 2.25,
+                        spaceBetween: 40,
+                      },
+
+                      1280: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                      },
+                    }}
+                    spaceBetween={40}
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="mySwiper"
+                  >
+                    {item.plans.map((item, index) => {
+                      return (
+                        <SwiperSlide key={index}>
+                          <PricingCard key={index} details={item} />
+                        </SwiperSlide>
+                      );
+                    })}
+                  </Swiper>
                 </Tab>
               );
             })}

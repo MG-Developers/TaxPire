@@ -1,23 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-// import { FaYoutube } from "react-icons/fa";
-// import { FaWhatsapp } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
     <section className="mt-4 lg:py-8 md:py-6 py-4 bg-tp-light-gray text-tp-gray">
-      <div className="container w-4/5 mx-auto md:mb-20 mb-12">
+      <div className="lg:w-4/5 w-11/12 mx-auto md:mb-20 mb-12">
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:justify-items-center justify-items-start">
           <div className="md:mt-10 mt-8">
             <img
-              className="xl:w-32 lg:w-24 w-12 mb-4"
+              className="xl:w-32 md:w-28 w-24 mb-4"
               src="images/taxpire-logo.svg"
             />
 
@@ -112,16 +108,15 @@ function Footer() {
 
       <hr className="border-gb-gray-3" />
 
-      <div className="container w-full lg:w-4/5 mx-auto mt-4 md:mt-16 text-tp-black">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="lg:w-4/5 w-11/12 mx-auto mt-4 md:mt-16 text-tp-black">
+        <div className="flex md:flex-row flex-col justify-between items-center">
           <p className="mb-8 md:mb-0">Copyright &copy; 2024 - TaxPire</p>
-          <Link
-            to="/contact"
-            style={{ boxShadow: "0 0 10px rgba(255, 194, 0, 0.3)" }}
-            className="ml-4 bg-tp-sky-blue w-1/5 text-center text-base text-white px-6 py-3 font-medium rounded-full mr-8 transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500"
+          <a
+            href="#"
+            className="bg-tp-sky-blue md:text-base text-sm text-white md:px-6 px-4 md:py-3 py-2 font-medium rounded-full transition-all hover:bg-tp-blue hover:ease-in-out hover:duration-500"
           >
-            Start Your Business
-          </Link>
+            Start your business
+          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import React from "react";
 import TeamCard from "../UI Components/Cards/TeamCard/TeamCard";
 import LocationCard from "../UI Components/Cards/LocationCard/LocationCard";
+import HeadlineTag from "../UI Components/HeadlineTag/HeadlineTag";
 
 function About() {
   const benefits_array = [
@@ -99,15 +100,18 @@ function About() {
     <>
       <section className="text-tp-black">
         <div className="bg-white border-1 border-gray-200 shadow-lg shadow-gray-200 mx-4 rounded-3xl">
-          <div className="mx-auto w-4/5 py-24">
-            <div className="grid grid-cols-2 gap-10 items-center">
-              <div>
-                <span className="bg-tp-black text-white shadow-xl text-base px-8 py-4 border-1 rounded-full border-tp-black font-medium">
-                  Get To Know Us!
-                </span>
-
-                <p className="text-6xl capitalize font-bold mt-10">About Us</p>
-                <p className="mt-6 text-base font-normal">
+          <div className="lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+              <div className="flex flex-col md:items-start items-center">
+                <HeadlineTag
+                  bg="tp-black"
+                  text="white"
+                  title="Get To Know Us!"
+                />
+                <p className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl capitalize font-bold lg:mt-10 md:mt-8 mt-6">
+                  About Us
+                </p>
+                <p className="lg:mt-6 md:mt-4 mt-3 md:text-base text-sm md:text-left text-center font-normal">
                   Taxpire simplifies taxes with expert guidance and tailored
                   solutions, ensuring ease and confidence. With a global
                   presence in <span className="text-tp-blue">India</span>,{" "}
@@ -124,20 +128,20 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-white mt-20 py-12 text-tp-black">
-        <div className="w-4/5 mx-auto">
+      <section className="bg-white text-tp-black">
+        <div className="lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
           <div className="flex justify-center">
-            <p className="text-5xl capitalize font-bold">
+            <p className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl capitalize font-bold">
               Our <span className="text-tp-blue">Expertise</span>
             </p>
           </div>
           <div className="flex justify-center">
-            <p className="text-center p-4 text-lg max-w-screen-lg font-light text-gray-500">
+            <p className="text-center lg:p-4 md:p-3 p-2 lg:text-lg md:text-base text-sm max-w-screen-lg font-light text-gray-500">
               At Taxpire, we are committed to pushing the boundaries of what's
               possible.
             </p>
           </div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 lg:mt-16 md:mt-12 mt-10">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-4 lg:mt-16 md:mt-12 mt-10">
             <div className="border-t border-tp-blue lg:py-10 md:py-8 py-4">
               <p className="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
                 2017
@@ -177,15 +181,15 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-white py-16 text-tp-black">
-        <div className="mx-auto w-4/5">
+      <section className="bg-white text-tp-black">
+        <div className="lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center">
-              <p className="text-5xl capitalize font-bold">
+              <p className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl capitalize font-bold">
                 We Operate
                 <span className="text-tp-blue leading-normal"> Globally</span>
               </p>
-              <p className="text-center p-4 text-lg max-w-screen-lg font-light text-gray-500">
+              <p className="text-center lg:p-4 md:p-3 p-2 lg:text-lg md:text-base text-sm max-w-screen-lg font-light text-gray-500">
                 With offices in India, Canada, and the UAE, we provide
                 comprehensive tax services to clients across the globe,
                 leveraging our local expertise to navigate international tax
@@ -193,15 +197,20 @@ function About() {
               </p>
             </div>
 
-            <div className="mt-12">
-              <div className="grid grid-flow-row auto-rows-min gap-20">
+            <div className="xl:mt-12 lg:mt-10 md:mt-8 mt-6">
+              <div className="grid grid-flow-row auto-rows-min xl:gap-20 lg:gap-16 md:gap-12 gap-10">
                 <div className="flex flex-col items-center">
                   <div className="flex items-center gap-6 cursor-pointer text-tp-black hover:text-tp-blue transition-all hover:duration-500 hover:ease-in-out">
-                    <img className="w-12" src="images/icons/india-flag.svg" />
-                    <p className="text-4xl font-bold">INDIA</p>
+                    <img
+                      className="xl:w-12 lg:w-10 w-8"
+                      src="images/icons/india-flag.svg"
+                    />
+                    <p className="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
+                      INDIA
+                    </p>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-10 mt-12">
+                  <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-10 lg:gap-8 gap-6 xl:mt-12 lg:mt-10 md:mt-8 mt-6">
                     <LocationCard
                       city="Noida"
                       address="The Iconic Corenthum, Sector 62, Noida, Uttar Pradesh
@@ -223,22 +232,26 @@ function About() {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <span className="bg-tp-white text-tp-black shadow-xl text-base px-8 py-4 border-1 rounded-full border-tp-black font-medium">
-                    Our Global Presence
-                  </span>
+                  <HeadlineTag
+                    bg="white"
+                    text="tp-black"
+                    title="Our Global Presence"
+                  />
                 </div>
 
-                <div className="grid grid-cols-2 gap-10">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                   <div className="flex flex-col items-center">
                     <div className="flex items-center gap-6 cursor-pointer text-tp-black hover:text-tp-blue transition-all hover:duration-500 hover:ease-in-out">
                       <img
-                        className="w-12"
+                        className="xl:w-12 lg:w-10 w-8"
                         src="images/icons/canada-flag.svg"
                       />
-                      <p className="text-4xl font-bold">CANADA</p>
+                      <p className="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
+                        CANADA
+                      </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-10 mt-12">
+                    <div className="grid grid-cols-1 xl:gap-10 lg:gap-8 gap-6 xl:mt-12 lg:mt-10 md:mt-8 mt-6">
                       <LocationCard
                         city="Toronto"
                         address="240 Richmond St W, Toronto, ON M5V 1V6, Canada"
@@ -248,11 +261,16 @@ function About() {
 
                   <div className="flex flex-col items-center">
                     <div className="flex items-center gap-6 cursor-pointer text-tp-black hover:text-tp-blue transition-all hover:duration-500 hover:ease-in-out">
-                      <img className="w-12" src="images/icons/uae-flag.svg" />
-                      <p className="text-4xl font-bold">UAE</p>
+                      <img
+                        className="xl:w-12 lg:w-10 w-8"
+                        src="images/icons/uae-flag.svg"
+                      />
+                      <p className="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
+                        UAE
+                      </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-10 mt-12">
+                    <div className="grid grid-cols-1 xl:gap-10 lg:gap-8 md:gap-6 gap-4 xl:mt-12 lg:mt-10 md:mt-8 mt-6">
                       <LocationCard
                         city="Dubai"
                         address="One Central 8th and 9th Floor, Trade Centre 2, Dubai"
@@ -266,22 +284,18 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-white py-24 text-tp-black">
-        <div className="mx-auto w-4/5">
+      <section className="bg-white text-tp-black">
+        <div className="lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div>
-              <span className="bg-tp-black text-white shadow-xl text-base px-8 py-4 border-1 rounded-full border-tp-black font-medium">
-                Our Vision
-              </span>
-            </div>
+            <HeadlineTag bg="tp-black" text="white" title="Our Vision" />
 
-            <div className="mt-16 flex flex-col items-center justify-center">
-              <p className="text-5xl capitalize font-bold">
+            <div className="xl:mt-16 lg:mt-12 md:mt-10 mt-8 flex flex-col items-center justify-center">
+              <p className="xl:text-5xl lg:text-4xl md:text-3xl text-center text-2xl capitalize font-bold">
                 Effortless Tax Filing Made
                 <span className="text-tp-blue leading-normal"> Easy </span>
                 with Taxpire
               </p>
-              <p className="text-center p-4 text-lg max-w-screen-lg font-light text-gray-500">
+              <p className="text-center lg:p-4 md:p-3 p-2 lg:text-lg md:text-base text-sm max-w-screen-lg font-light text-gray-500">
                 At Taxpire, we envision a future where tax filing and compliance
                 are seamless experiences for individuals and businesses alike.
                 Our commitment lies in delivering premium services that
@@ -289,45 +303,46 @@ function About() {
               </p>
             </div>
 
-            <div className="mt-10">
+            <div className="xl:mt-10 lg:mt-8 md:mt-6 mt-4">
               <img className="rounded-3xl" src="images/dummy-about-img-3.jpg" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-tp-light-gray py-24">
-        <div className="flex flex-col items-center mx-auto w-4/5">
-          <div>
-            <span className="bg-tp-black text-white shadow-xl text-base px-8 py-4 border-1 rounded-full border-tp-black font-medium">
-              Values
-            </span>
-          </div>
+      <section className="bg-tp-light-gray">
+        <div className="flex flex-col items-center lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
+          <HeadlineTag bg="tp-black" text="white" title="Values" />
 
-          <div className="mt-10">
-            <p className="leading-tight text-5xl capitalize text-center font-bold">
+          <div className="xl:mt-10 lg:mt-8 md:mt-6 mt-4">
+            <p className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-center capitalize font-bold">
               Every best decision in{" "}
               <span className="text-tp-blue">Taxpire</span> team
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-16 mt-16">
+          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-12 md:gap-10 gap-8 xl:mt-16 lg:mt-12 md:mt-10 mt-8">
             {benefits_array.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="flex items-start p-10 rounded-3xl bg-white shadow-lg shadow-gray-100 hover:duration-500 hover:shadow-gray-300 hover:ease-in-out transition-all"
+                  className="flex md:flex-row flex-col md:items-start items-center xl:p-10 lg:p-8 p-6 rounded-3xl bg-white shadow-lg shadow-gray-100 hover:duration-500 hover:shadow-gray-300 hover:ease-in-out transition-all"
                 >
                   <div
                     style={{ backgroundColor: item.bgColor }}
-                    className="flex items-center justify-center rounded-3xl mr-6 min-w-28 min-h-28"
+                    className="flex items-center justify-center rounded-3xl lg:p-6 md:p-4 p-3 md:mr-6 mr-0 min-w-fit min-h-fit"
                   >
-                    <img className="w-16" src={`images/icons/${item.icon}`} />
+                    <img
+                      className="xl:w-16 md:w-12 w-10"
+                      src={`images/icons/${item.icon}`}
+                    />
                   </div>
 
-                  <div>
-                    <p className="text-3xl font-bold">{item.title}</p>
-                    <p className="mt-2 font-light text-lg text-tp-gray">
+                  <div className="md:text-left text-center">
+                    <p className="xl:text-3xl md:text-2xl text-xl md:mt-0 mt-4 font-bold">
+                      {item.title}
+                    </p>
+                    <p className="mt-2 font-light lg:text-lg md:text-base text-sm md:mt-0 mt-2 text-tp-gray">
                       {item.description}
                     </p>
                   </div>
@@ -338,21 +353,17 @@ function About() {
         </div>
       </section>
 
-      <section className="mt-10 bg-white py-24 text-tp-black mb-20">
-        <div className="mx-auto w-4/5">
-          <div>
-            <span className="bg-tp-black text-white shadow-xl text-base px-8 py-4 border-1 rounded-full border-tp-black font-medium">
-              Our Team
-            </span>
-          </div>
+      <section className="bg-white text-tp-black xl:mb-20 lg:mb-16 md:mb-12 mb-8">
+        <div className="flex flex-col md:items-start items-center lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
+          <HeadlineTag bg="tp-black" text="white" title="Our Team" />
 
-          <div className="mt-16">
-            <p className="text-5xl capitalize font-bold">
+          <div className="xl:mt-16 lg:mt-12 md:mt-10 mt-8">
+            <p className="xl:text-5xl lg:text-4xl md:text-3xl text-center text-2xl capitalize font-bold">
               Our Taxpire <span className="text-tp-blue">Experts</span>
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-20 mt-16">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-x-10 md:gap-x-8 gap-x-6 xl:gap-y-20 lg:gap-y-16 md:gap-y-12 gap-y-10 xl:mt-16 lg:mt-12 md:mt-10 mt-8">
             {team_array.map((item) => {
               return (
                 <TeamCard

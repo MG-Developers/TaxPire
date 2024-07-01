@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container text-black w-4/5 mx-auto py-4 flex items-center justify-between">
+    <header className="container bg-white text-black lg:w-4/5 w-11/12 mx-auto py-4 flex items-center justify-between">
       <NavLink to="/">
         <img className="xl:w-40 md:w-36 w-32" src="images/taxpire-logo.svg" />
       </NavLink>
