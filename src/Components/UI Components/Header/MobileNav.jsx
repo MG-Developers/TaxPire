@@ -84,7 +84,7 @@ function MobileNav({ setMobileMenuOpen }) {
                       >
                         <NavLink
                           to={subMenu.link}
-                          onClick={scrollToTop}
+                          onClick={!subMenu.superSubMenu && scrollToTop}
                           className="flex items-center gap-2 text-gray-800 font-semibold md:p-3 p-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 hover:text-indigo-600"
                         >
                           <img
