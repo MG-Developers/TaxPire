@@ -38,7 +38,7 @@ function Support() {
           </p>
 
           <div className="lg:mt-12 md:mt-10 mt-8">
-            <HeadlineTag bg="tp-black" text="white" title="Get In Touch!" />
+            <HeadlineTag bg="bg-tp-black" text="white" title="Get In Touch!" />
           </div>
 
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:mt-16 lg:mt-12 md:mt-10 mt-8 xl:gap-10 lg:gap-8 md:gap-10 gap-6">

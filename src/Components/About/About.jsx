@@ -104,7 +104,7 @@ function About() {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
               <div className="flex flex-col md:items-start items-center">
                 <HeadlineTag
-                  bg="tp-black"
+                  bg="bg-tp-black"
                   text="white"
                   title="Get To Know Us!"
                 />
@@ -233,7 +233,7 @@ function About() {
 
                 <div className="flex items-center justify-center">
                   <HeadlineTag
-                    bg="white"
+                    bg="bg-white"
                     text="tp-black"
                     title="Our Global Presence"
                   />
@@ -287,7 +287,7 @@ function About() {
       <section className="bg-white text-tp-black">
         <div className="lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <HeadlineTag bg="tp-black" text="white" title="Our Vision" />
+            <HeadlineTag bg="bg-tp-black" text="white" title="Our Vision" />
 
             <div className="xl:mt-16 lg:mt-12 md:mt-10 mt-8 flex flex-col items-center justify-center">
               <p className="xl:text-5xl lg:text-4xl md:text-3xl text-center text-2xl capitalize font-bold">
@@ -312,7 +312,7 @@ function About() {
 
       <section className="bg-tp-light-gray">
         <div className="flex flex-col items-center lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
-          <HeadlineTag bg="tp-black" text="white" title="Values" />
+          <HeadlineTag bg="bg-tp-black" text="white" title="Values" />
 
           <div className="xl:mt-10 lg:mt-8 md:mt-6 mt-4">
             <p className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-center capitalize font-bold">
@@ -355,7 +355,7 @@ function About() {
 
       <section className="bg-white text-tp-black xl:mb-20 lg:mb-16 md:mb-12 mb-8">
         <div className="flex flex-col md:items-start items-center lg:w-4/5 w-11/12 xl:py-16 lg:py-12 md:py-10 py-8 mx-auto">
-          <HeadlineTag bg="tp-black" text="white" title="Our Team" />
+          <HeadlineTag bg="bg-tp-black" text="white" title="Our Team" />
 
           <div className="xl:mt-16 lg:mt-12 md:mt-10 mt-8">
             <p className="xl:text-5xl lg:text-4xl md:text-3xl text-center text-2xl capitalize font-bold">
