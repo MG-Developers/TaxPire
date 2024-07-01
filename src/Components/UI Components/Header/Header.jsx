@@ -49,7 +49,7 @@ const Header = () => {
                           className="w-10 mr-4"
                           src="images/icons/tax-icon.svg"
                         />
-                        <NavLink to="/pricing">
+                        <NavLink to="/itrpricing/salaried">
                           {" "}
                           ITR
                           <p className="text-gray-600 font-normal text-sm">
@@ -481,7 +481,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      {mobileMenuOpen && <MobileNav />}
+      {mobileMenuOpen && <MobileNav setMobileMenuOpen={setMobileMenuOpen} />}
 
       <div className="xl:hidden flex cursor-pointer">
         {mobileMenuOpen ? (

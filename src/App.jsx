@@ -5,7 +5,8 @@ import Header from "./Components/UI Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Blogs from "./Components/Blogs/Blogs";
 import About from "./Components/About/About";
-import Pricing from "./Components/Pricing/Pricing";
+// import Pricing from "./Components/Pricing/Pricing";
+import ITRPricing from "./Components/ITR Pricing/ITRPricing";
 import GSTPricing from "./Components/GST Pricing/GSTPricing";
 import TDSPricing from "./Components/TDS Pricing/TDSPricing";
 import BusinessPricing from "./Components/Business Pricing/BusinessPricing";
@@ -28,7 +29,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/about" element={<About />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/itrpricing/*" element={<ITRPricing />} />
           <Route path="/gstpricing/*" element={<GSTPricing />} />
           <Route path="/tdspricing/*" element={<TDSPricing />} />
           <Route path="/businesspricing/*" element={<BusinessPricing />} />

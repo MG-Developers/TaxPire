@@ -6,7 +6,7 @@ export const linksData = [
         name: "ITR",
         icon: "tax-icon.svg",
         description: "File ITR with expert assistance",
-        link: "/pricing",
+        link: "/itrpricing/salaried",
       },
 
       {

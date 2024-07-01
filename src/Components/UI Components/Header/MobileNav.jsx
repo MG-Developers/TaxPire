@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { linksData } from "./LinksData";
 
-function MobileNav() {
+function MobileNav({ setMobileMenuOpen }) {
   const [subMenuStates, setSubMenuStates] = useState(Array(5).fill(false));
   const [superMenuStates, setSuperMenuStates] = useState(Array(4).fill(false));
 
@@ -31,6 +31,14 @@ function MobileNav() {
     });
     newSuperMenuStates[index] = !newSuperMenuStates[index];
     setSuperMenuStates(newSuperMenuStates);
+  };
+
+  const scrollToTop = () => {
+    setMobileMenuOpen(false);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -76,6 +84,7 @@ function MobileNav() {
                       >
                         <NavLink
                           to={subMenu.link}
+                          onClick={scrollToTop}
                           className="flex items-center gap-2 text-gray-800 font-semibold md:p-3 p-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 hover:text-indigo-600"
                         >
                           <img
@@ -109,7 +118,10 @@ function MobileNav() {
                                   key={index}
                                   className="text-gray-800 font-medium md:p-3 p-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 hover:text-indigo-600"
                                 >
-                                  <NavLink to={superSubMenu.link}>
+                                  <NavLink
+                                    onClick={scrollToTop}
+                                    to={superSubMenu.link}
+                                  >
                                     {" "}
                                     {superSubMenu.name}
                                   </NavLink>
